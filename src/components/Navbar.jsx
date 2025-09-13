@@ -12,10 +12,11 @@ const Navbar = () => {
     <>
       <nav className="bg-gray-50 shadow-sm">
         <div className="px-4 lg:px-20 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold font-poppins text-gray-900">
-            .Shop<span className="text-purple-700 underline">D</span>
-          </h1>
-
+          <Link to="/">
+            <h1 className="text-2xl font-bold font-poppins text-gray-900">
+              .Shop<span className="text-purple-700 underline">D</span>
+            </h1>
+          </Link>
           <ul className="hidden md:flex space-x-8 text-sm font-semibold text-gray-800 uppercase tracking-wide">
             <li>
               <Link to="/" className="hover:text-purple-700">
@@ -68,27 +69,47 @@ const Navbar = () => {
           <div className="md:hidden bg-white border-t border-gray-200 shadow-md absolute w-full z-40">
             <ul className="flex flex-col items-center py-6 gap-6 text-sm font-semibold text-gray-800 uppercase tracking-wide">
               <li>
-                <Link to="/" className="hover:text-purple-700">
+                <Link
+                  to="/"
+                  className="hover:text-purple-700"
+                  onClick={() => setOpen(false)}
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-purple-700">
+                <Link
+                  to="/about"
+                  className="hover:text-purple-700"
+                  onClick={() => setOpen(false)}
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="hover:text-purple-700">
+                <Link
+                  to="/products"
+                  className="hover:text-purple-700"
+                  onClick={() => setOpen(false)}
+                >
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="/blogs" className="hover:text-purple-700">
+                <Link
+                  to="/blogs"
+                  className="hover:text-purple-700"
+                  onClick={() => setOpen(false)}
+                >
                   Blogs
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-purple-700">
+                <Link
+                  to="/contact"
+                  className="hover:text-purple-700"
+                  onClick={() => setOpen(false)}
+                >
                   Contact
                 </Link>
               </li>
