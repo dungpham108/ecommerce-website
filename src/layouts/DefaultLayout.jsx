@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { FiArrowUp } from "react-icons/fi"; // ✅ thêm import icon
+import { FiArrowUp } from "react-icons/fi";
 
 export default function DefaultLayout() {
   const [showScrollTop, setShowScrollTop] = useState(false);

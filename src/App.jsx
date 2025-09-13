@@ -1,6 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
@@ -15,7 +13,6 @@ import SignUp from "./pages/SignUp";
 export default function App() {
   return (
     <BrowserRouter>
-      <ToastContainer />
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<Home />} />

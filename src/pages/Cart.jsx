@@ -7,8 +7,6 @@ import {
   resetCart,
 } from "../redux/cartSlice";
 import { FaTrashAlt } from "react-icons/fa";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -39,8 +37,6 @@ const Cart = () => {
       }));
 
       window.scrollTo({ top: 0, behavior: "smooth" });
-
-      toast.success("Purchase successful!");
 
       dispatch(resetCart());
     }
